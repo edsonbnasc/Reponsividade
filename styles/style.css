@@ -151,7 +151,7 @@ header{
     color: white;
 }
 
-#headleNavbar{
+#headleNavbar, #headleNavuser{
     background-color: transparent;
     border: none;
 }
@@ -229,6 +229,12 @@ header{
     }
     .card-style{
         width: 250px;
+    }
+
+    .header-style__fixedheader{
+        max-width: 1000px;
+        margin: 0;
+        padding: 0;
     }
 
 
