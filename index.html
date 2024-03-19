@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Semantica1</title>
@@ -10,6 +10,33 @@
 <body>
     <header>
         <section class="container-grid header-style">
+            <div class="header-style__fixedheader">
+                <button id="headleNavbar">
+                    <i class="bi bi-list"></i>
+                </button>
+                <button id="headleNavuser">
+                    <i class="bi bi-person"></i>
+                </button>
+            </div>
+            <nav class="header-style__links open">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Conteudo</a></li>
+                    <li><a href="#">Informações</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </nav>
+            <nav class="header-style__user user">
+                <ul>
+                    <li><a href="#">Entre ou Cadastre-se</a></li>
+                    <li><a href="#">Carrinho</a></li>
+                    <li><a href="#">Pedidos</a></li>
+                    <li><a href="#">Configurações</a></li>
+                    <li><a href="#">Tema</a></li>
+                </ul>
+            </nav>
+
             <article class="header-style__info">
                 <h1>
                     Lorem ipsum dolor sit.
@@ -70,9 +97,7 @@
             </section>
         </section>
     </main>
-
-
-    
-   
+    <footer></footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
