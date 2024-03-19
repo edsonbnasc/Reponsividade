@@ -160,11 +160,11 @@ header{
     background-color: white;
     position: absolute;
     top: 70px;
-    left: 0;
+    right: 0;
     height: 100vh;
     width: 90%;
     /* propriedade para realizar a animação dos links */
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: all 0.3 ease;
     display: block;
 }
