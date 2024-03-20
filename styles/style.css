@@ -5,12 +5,26 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.theme-dark{
+    --backgroundColor: #141d2f;
+    --backgroundColorCards: #1e2a47;
+    --color:white;
+}
+
+.theme-light{
+    --textColor: grey;
+    --backgroundColorl:green;
+}
 
 header{
-    background-color: #d7d4ff;
     padding: 40px;
     margin-top: 70px;
+    background-color: #d7d4ff;
+    /* background-color: var(--backgroundColor); */
 }
+
+
+
 .header-style{
     display: flex;
     flex-direction: column;
@@ -92,11 +106,20 @@ header{
 
 .card-style__infos{
     padding: 20px;
+    background-color: var(--backgroundColorCards);
+    color: var(--color);
+}
+
+.card-style__infos>p, h3{
+    color: var(--color);
+    color: var(--textColor);
 }
 
 .card-style__infos>p{
-    color: #555555;
+    /* color: #555555; */
     margin-top: 15px;
+    /* color: var(--color);
+    color: var(--textColor); */
 }
 .header-style__fixedheader{
     position: fixed;
