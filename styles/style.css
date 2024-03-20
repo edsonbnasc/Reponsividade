@@ -24,9 +24,12 @@ header{
     padding: 40px;
     margin-top: 70px;
     /* background-color: var(--backgroundColorl); */
-    background-color: var(--backgroundColor);
+    background-color: #d7d4ff;
 }
 
+body{
+    overflow-x: hidden;
+}
 
 
 .header-style{
@@ -231,6 +234,9 @@ header{
         margin: 0 auto;
         
         /* border: 2px solid black; */
+    }
+    .header-style__fixedheader, .header-style__links, .header-style__user{
+        display: none;
     }
 
     .header-style{
