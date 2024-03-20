@@ -1,11 +1,12 @@
 const headerLinks = document.querySelector(".header-style__links");
-
-    document.getElementById("headleNavbar").addEventListener("click", ()=>{
-        headerLinks.classList.toggle("open")
+document.getElementById("headleNavbar").addEventListener("click", ()=>{
+    headerLinks.classList.toggle("open")
+    headerUser.classList.remove("user")
 });
 const headerUser = document.querySelector(".header-style__user");
-    document.getElementById("headleNavuser").addEventListener("click", ()=>{
-        headerUser.classList.toggle("user")
+document.getElementById("headleNavuser").addEventListener("click", ()=>{
+    headerUser.classList.toggle("user")
+    headerLinks.classList.remove("open")
 });
 // função para setar o tema no local storage do navegador
 function setTheme(theme){
@@ -32,4 +33,6 @@ function getTheme(){
     }else{
         setTheme("theme-light")
     }
+    headerLinks.classList.remove("open")
+    headerUser.classList.remove("user")
 })();
